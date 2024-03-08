@@ -13,17 +13,18 @@
             <nav>
                 <img src="image/portfolio logo new.jpeg" alt="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Cybersecurity Enthusiast</p>
+                
                 <h1>
-                    <p>Hi,</p>
-                    <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+                    <p>Hi, I'm</p>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Soumyashree", "Cybersecurity Enthusiast", "Aspiring Ethical Hacker", "An Undergraduate" ]'>
                       <span class="wrap"></span>
                     </a>
                   </h1>
@@ -31,7 +32,7 @@
         </div>
     </div>
 
-           <!--ABOUT Section-->
+           <!------------------ABOUT Section----------->
 
     <div id="about">
         <div class="container">
@@ -75,6 +76,7 @@
     </div>
 
      <!------------PROJECTS SECTION------->
+
      <div id="projects">
         <div id="container">
             <h1 class="sub-title">My projects</h1>
@@ -137,14 +139,30 @@
      </div>
 
      <!-------------------CONTACTS----------------->
+
      <div id="contact">
         <div class="container">
             <div class="contact-left">
-                <h1 class="sub-titke">Contact</h1>
-                <p>contact</p>
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@soumyastudy147@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123654478</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/soumyashree-sahoo-/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/soumyass147"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/oye_shreesha"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="image/resume.pdf" download class="btn btn2">Resume</a>
             </div>
-            <div class="contact-right"></div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
         </div>
+        
      </div>
 
     <script>
@@ -163,6 +181,17 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbycD-TaRI8ON6upaOGEIbX5K9yU64OrCXqHAB1tFOoKF3SmM3FJpj8mb6RstZS3MB3J/exec>'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
       <script src="script.js"></script>
 </body>
 </html>
