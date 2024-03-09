@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-4oV6HgK1t0dDyQQNnxESKo1G6oQzBfFsobwD8gylP3Oqo0mYLCF1/S0+Xt9BOsSb" crossorigin="anonymous">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2630eea3e6.js" crossorigin="anonymous"></script>
@@ -11,14 +12,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="image/portfolio logo new.jpeg" alt="logo">
-                <ul>
+                <img src="image/portfolio logo new.jpeg" alt="logo" class="logo">
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#works">Works</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 
@@ -192,6 +195,26 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+
+<script>
+    var sidemenu = document.getElementById("sidememnu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+       <!-- footer -->
+       <footer>
+        <a href="#header" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <p> © Soumyashree Sahoo </p>
+    </footer>
       <script src="script.js"></script>
 </body>
 </html>
