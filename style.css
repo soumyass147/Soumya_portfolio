@@ -351,9 +351,10 @@ form input, form textarea{
 }
 
 form .btn3{
-    padding: 14px 60px;
+    padding: 10px 60px;
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: 30px;
     cursor: pointer;
     border-radius: 10px;
 }
@@ -365,4 +366,106 @@ form .btn3{
 .btn3:hover{
     background:#e84a4a ;
 
+}
+
+/*footer*/
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #EF0C0C;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+nav .fa-solid{
+    display: flex;
+}
+nav .fas{
+    display: none;
+}
+/* ----- Responsive part start ----*/
+
+@media screen  and (max-width :768px){
+#header{
+    background-image: url();
+}
+
+.header-text{
+    margin-top:100% ;
+    font-size: 16px;
+}
+
+.header-text h1{
+    font-size: 30px;
+}
+
+nav .fas{
+    display: block;
+    font-size: 25px;
+}
+
+nav ul{
+    background: transparent;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition:right 0.5s;
+}
+
+nav ul li {
+    display: block;
+    margin: 25px;
+}
+
+nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+
+}
+
+@media screen  and (min-width :768px){
+
+    
+}
+
+@media screen  and (-webkit-min-device-pixel-ratio :0){
+
+    
 }
