@@ -13,6 +13,7 @@ body{
     color: #fff;
     background-image: url(image/red\ bg.jpg);
     background-size:cover;
+    background-position: center;
 
 }
 
@@ -155,7 +156,7 @@ flex-basis: 60%;
 
 /*-----------/*PROJECTS-------------*/
 #projects{
-    padding: 30px 110px;
+    padding: 30px 170px;
 
 }
 .projects-list{
@@ -287,11 +288,11 @@ flex-basis: 60%;
 
 .contact-left{
     flex-basis: 35%;
-    padding: 0 20px;
+    padding: 0 170px;
 }
 .contact-right{
     flex-basis: 60%;
-    padding-right: 100px;
+    padding-right: 170px;
 }
 .contact-left p{
     margin-top: 30px;
