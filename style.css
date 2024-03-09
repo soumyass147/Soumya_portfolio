@@ -318,7 +318,12 @@ flex-basis: 60%;
     color: #ff004f;
     transform: translateY(-5px);
 }
-.btn.btn2{
+.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.btn3{
     display: inline-block;
     background: #ff004f;
 }
@@ -337,9 +342,27 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-form btn2{
+.btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+form .btn3{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn2:hover{
+    background: #e84a4a;
+
+}
+
+.btn3:hover{
+    background:#e84a4a ;
+
 }
