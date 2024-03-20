@@ -102,8 +102,12 @@ nav ul li a:hover::after{
 }
 .about-col-2{
 flex-basis: 60%;
+font-size: 20px;
+line-height: 30px;
 }
-
+.about-col-2 p{
+    padding-top: 50px;
+}
 .sub-title{
     font-size: 60px ;
     font-weight: 600;
@@ -115,7 +119,7 @@ flex-basis: 60%;
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -141,7 +145,7 @@ flex-basis: 60%;
 }
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 25px;
 }
 .tab-contents{
     display: none;
