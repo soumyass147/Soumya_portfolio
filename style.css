@@ -558,3 +558,11 @@ margin-bottom: 30px;
 
 
 }
+
+.alert{
+    text-align: center;
+    background-color:#ff004f;
+    width: 100%;
+    display: none;
+    font-weight: 100;
+}

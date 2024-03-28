@@ -91,5 +91,20 @@ form.addEventListener('submit', e => {
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => console.log('Success!', response))
     .catch(error => console.error('Error!', error.message))
+
+
+    //alert message enable
+    document.querySelector('.alert').style.display = 'block';
+
+    //remove alert message 
+    setTimeout(() => {
+        document.querySelector('.alert').style.display = 'none';
+
+    }, 3000)
+
+    //reset form 
+        document.getElementsByName("submit-to-google-sheet")[0].reset();
+
+
 })
 
